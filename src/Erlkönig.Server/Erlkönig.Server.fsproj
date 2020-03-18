@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BookService.fs" />
+    <Compile Include="HostModel.fs" />
+    <Compile Include="Startup.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Erlkönig.Client\Erlkönig.Client.fsproj" />
+    <PackageReference Include="Bolero.Server" Version="0.11.22-preview31" />
+    <PackageReference Include="Bolero.HotReload.Server" Version="0.11.5-preview31" />
+    <PackageReference Include="Microsoft.AspNetCore.Blazor.Server" Version="3.1-preview4.19579.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1" />
+  </ItemGroup>
+</Project>
